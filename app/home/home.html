@@ -1,0 +1,40 @@
+﻿<div class="home">
+<div class="text-center">
+
+    <div class="vertical-space"></div>
+    <h1><a target="_blank" href="https://github.com/zhoudaxiaa/DownGit">DownGit</a></h1>
+    <div class="center-row"></div>
+    <h2>周大侠啊，一名前端工程师，博客地址<a target="_blank" href="https://www.zhoudaxiaa.com">周大侠啊</a></h2>
+    <h4>创建 GitHub 资源下载链接</h4>
+    
+    
+    <div class="vertical-space"></div>
+    <div class="col-md-6 center-row">
+        <input name="url" type="url" placeholder="GitHub 文件 或者文件夹 链接" class="form-control" ng-model="url" ng-keypress="catchEnter($event)"></input>
+    </div>
+    <div class="btn-group center-row">
+        <button type="button" class="btn btn-default" ng-click="createDownLink()">创建下载链接</button>
+        <button type="button" class="btn btn-default" ng-click="download()">下载</button>
+    </div>
+    
+    
+    <div ng-show="isProcessing.val">
+        <div class="vertical-space"></div>
+        <img class="processing-img" src="res/images/processing.gif" />
+        <p>Downloaded {{downloadedFiles.val}} of {{totalFiles.val}} files</p>
+    </div>
+    
+    
+    <div class="col-md-6 center-row" ng-show="downUrl">
+        <div class="vertical-space"></div>
+        <textarea class="form-control download-link-box" ng-model="downUrl" ></textarea>
+    </div>
+    
+    <div class="vertical-space"></div>
+    <div class="footer">
+        <p>下面是原作者的github地址，因为他的资源链接问题，原项目使用不了，我提过Issues，但是一直没有得到回复，所以我clone下来作了修改，发布于此站。</p>
+        <a target="_blank" href="https://github.com/MinhasKamal/DownGit">DownGit</a> by <a target="_blank" href="https://github.com/MinhasKamal">Minhas Kamal</a>
+    </div>
+    
+</div>
+</div>
