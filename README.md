@@ -4,7 +4,7 @@
 
 github 资源打包下载工具，可以用来下载单个文件夹。
 
-本项目在线使用地址：[周大侠啊DownGit]([http://downgit.zhoudaxiaa.com](https://zhoudaxiaa.gitee.io/downgit/))
+本项目在线使用地址：[周大侠啊DownGit](https://zhoudaxiaa.gitee.io/downgit/)
 
 使用方法：
 - 比较简单，就是把想要打包下载的资源链接放入输入框内，点击下载，等待数秒后即可。
